@@ -3,7 +3,6 @@ const dotenv = require('dotenv')
 const PubSub = require(`@google-cloud/pubsub`)
 
 dotenv.config()
-const outputDir = 'results'
 
 const pubsub = new PubSub()
 const subscription = pubsub.subscription('rdbs-stream')
